@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Itim&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 body {
@@ -54,8 +57,8 @@ header {
 }
 
 header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 header nav {
@@ -107,8 +110,58 @@ header .hire-talent {
   margin-bottom: 2rem;
   color: #666;
 }
-
-.access-talent {
+.outer-div{
+  background-color: black;
+  height: 60px;
+  width: 200px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height:55px ;
+  width: 55px;
+  background-color: white;
+  border-radius: 50%;
+  /* padding-right: 15px; */
+  margin-right: 3px;
+  /* color: red; */
+}
+.access{
+  padding-left: 12px;
+  color: white;
+}
+.div-right-end{
+  transition:all 0.8s ;
+  position: relative;
+  transform: translateX(-140px);
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+.div-left-end{
+  transition:all 0.8s ;
+  position: relative;
+  transform: translateX(0px);
+  /* transform: translateX(-140px); */
+}
+.access-right-end{
+  transition:all 0.8s ;
+  position: relative;
+  transform: translateX(75px);
+}
+.access-left-end{
+  transition:all 0.8s ;
+  position: relative;
+  transform: translateX(0px);
+  /* transform: translateX(-140px); */
+}
+/* .access-talent {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -120,7 +173,7 @@ header .hire-talent {
   border-radius: 30px;
   cursor: pointer;
   text-transform: uppercase;
-}
+} */
 
 .profiles {
   display: flex;
@@ -150,6 +203,10 @@ header .hire-talent {
 }
 
 .content {
-  margin-top: 200px;
+  margin-top: 100px;
+  width: 570px;
+  margin-left: 70px;
+  /* margin-right: 20px; */
+  /* background-color: red; */
   /* padding: 0; */
 }

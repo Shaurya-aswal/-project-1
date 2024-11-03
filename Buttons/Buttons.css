@@ -1,0 +1,57 @@
+.button-container {
+    perspective: 1000px;
+    border: 5px solid black;
+}
+
+.hire-talent {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
+    border: 5px  solid #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: solid black;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hire-talent span {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    transition: color 0.4s ease;
+    font-size: medium;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hire-talent::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #fff;
+    transition: transform 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.hire-talent:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hire-talent:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.hire-talent:hover span {
+    color: #000;
+}
